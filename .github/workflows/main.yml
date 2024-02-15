@@ -17,3 +17,13 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: 'projects/locations/754904294787/global/workloadIdentityPools/my-pool/providers/my-provider'
+          service_account: 'my-service-account@$photos13114.iam.gserviceaccount.com'
+          token_format: 'access_token'
+          access_token_lifetime: '300s'
+
+
