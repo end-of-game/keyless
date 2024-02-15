@@ -21,9 +21,7 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v2
         with:
+          project_id: 'photos13114'
           workload_identity_provider: 'projects/754904294787/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'my-service-account@photos13114.iam.gserviceaccount.com'                            
-          token_format: 'access_token'
-          access_token_lifetime: '300s'
-
+          
 
