@@ -26,5 +26,12 @@ jobs:
         with:
           project_id: 'photos13114'
           workload_identity_provider: 'projects/754904294787/locations/global/workloadIdentityPools/my-pool2/providers/my-provider2'          
-          
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+        with:
+          version: '>= 400.0.0'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
 
