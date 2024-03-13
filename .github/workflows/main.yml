@@ -24,8 +24,8 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v2
         with:
-          project_id: 'photos13114'
-          workload_identity_provider: 'projects/754904294787/locations/global/workloadIdentityPools/my-pool2/providers/my-provider2'          
+          project_id: 'bask-xxx'
+          workload_identity_provider: 'projects/229739787184/locations/global/workloadIdentityPools/my-pool2/providers/ze-provider'          
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
