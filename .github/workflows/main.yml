@@ -24,7 +24,7 @@ jobs:
         id: auth
         uses: google-github-actions/auth@v2
         with:
-          project_id: 'bask-xxx'
+          project_id: 'bask-414819'
           workload_identity_provider: 'projects/229739787184/locations/global/workloadIdentityPools/my-pool2/providers/ze-provider'          
 
       - name: 'Set up Cloud SDK'
